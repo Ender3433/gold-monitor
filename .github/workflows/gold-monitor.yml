@@ -1,0 +1,23 @@
+name: 金价监控 - 定时检查
+on:
+  schedule:
+    - cron: '0,10,20,30,40,50 9 * * 1-5'
+    - cron: '0,30 10-15 * * 1-5'
+    - cron: '0,30 20-22 * * 1-5'
+  workflow_dispatch:
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: 检查金价
+        env:
+          SMTP_SERVER: ${{ secrets.SMTP_SERVER }}
+          SMTP_PORT: ${{ secrets.SMTP_PORT }}
+          SENDER_EMAIL: ${{ secrets.SENDER_EMAIL }}
+          SENDER_PASSWORD: ${{ secrets.SENDER_PASSWORD }}
+          RECEIVER_EMAIL: ${{ secrets.RECEIVER_EMAIL }}
+        run: python gold-monitor-gha.py
