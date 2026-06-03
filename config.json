@@ -1,0 +1,184 @@
+{
+  "email": {
+    "smtp_server": "smtp.qq.com",
+    "smtp_port": 465,
+    "sender_email": "byljx@foxmail.com",
+    "sender_password": "rwgdpbgyzzfvbgbb",
+    "receiver_email": "byljx@163.com"
+  },
+  "alerts": [
+    {
+      "name": "银行金条低于阈值",
+      "type": "bank",
+      "field": "price",
+      "enabled": false,
+      "direction": "below",
+      "threshold": 1000
+    },
+    {
+      "name": "银行金条高于阈值",
+      "type": "bank",
+      "field": "price",
+      "enabled": false,
+      "direction": "above",
+      "threshold": 1200
+    },
+    {
+      "name": "首饰金价低于阈值",
+      "type": "jewelry",
+      "field": "gold_price",
+      "enabled": false,
+      "direction": "below",
+      "threshold": 1300
+    },
+    {
+      "name": "首饰金价高于阈值",
+      "type": "jewelry",
+      "field": "gold_price",
+      "enabled": false,
+      "direction": "above",
+      "threshold": 1600
+    },
+    {
+      "name": "Au99.99 低于阈值",
+      "type": "au9999",
+      "field": "price",
+      "enabled": true,
+      "direction": "below",
+      "threshold": 973
+    },
+    {
+      "name": "Au99.99 高于阈值",
+      "type": "au9999",
+      "field": "price",
+      "enabled": true,
+      "direction": "above",
+      "threshold": 982.5
+    }
+  ],
+  "price_history": [
+    {
+      "time": "2026-06-02 20:17:24",
+      "bank_avg": 999.89,
+      "jewelry_avg": 1369.36
+    },
+    {
+      "time": "2026-06-02 20:33:14",
+      "bank_avg": 999.89,
+      "jewelry_avg": 1369.36,
+      "au9999": 985.6
+    },
+    {
+      "time": "2026-06-02 20:33:28",
+      "bank_avg": 999.89,
+      "jewelry_avg": 1369.36,
+      "au9999": 985.6
+    },
+    {
+      "time": "2026-06-02 20:35:07",
+      "bank_avg": 999.89,
+      "jewelry_avg": 1369.36,
+      "au9999": 984.4
+    },
+    {
+      "time": "2026-06-02 20:37:46",
+      "bank_avg": 999.89,
+      "jewelry_avg": 1369.36,
+      "au9999": 984.4
+    },
+    {
+      "time": "2026-06-02 20:52:58",
+      "bank_avg": 999.89,
+      "jewelry_avg": 1369.36,
+      "au9999": 985.7
+    },
+    {
+      "time": "2026-06-02 21:05:50",
+      "bank_avg": 999.89,
+      "jewelry_avg": 1369.36,
+      "au9999": 982.1
+    },
+    {
+      "time": "2026-06-02 21:06:11",
+      "bank_avg": 999.89,
+      "jewelry_avg": 1369.36,
+      "au9999": 982.1
+    },
+    {
+      "time": "2026-06-02 21:06:39",
+      "bank_avg": 999.89,
+      "jewelry_avg": 1369.36,
+      "au9999": 982.1
+    },
+    {
+      "time": "2026-06-02 21:22:54",
+      "bank_avg": 999.89,
+      "jewelry_avg": 1369.36,
+      "au9999": 983.0
+    },
+    {
+      "time": "2026-06-02 21:25:14",
+      "bank_avg": 999.89,
+      "jewelry_avg": 1369.36,
+      "au9999": 982.1
+    },
+    {
+      "time": "2026-06-02 21:26:22",
+      "bank_avg": 999.89,
+      "jewelry_avg": 1369.36,
+      "au9999": 982.1
+    },
+    {
+      "time": "2026-06-02 21:30:52",
+      "bank_avg": 999.89,
+      "jewelry_avg": 1369.36,
+      "au9999": 983.0
+    },
+    {
+      "time": "2026-06-02 21:40:37",
+      "bank_avg": 996.61,
+      "jewelry_avg": 1355.09,
+      "au9999": 981.5
+    },
+    {
+      "time": "2026-06-02 21:55:37",
+      "bank_avg": 996.61,
+      "jewelry_avg": 1355.09,
+      "au9999": 981.5
+    },
+    {
+      "time": "2026-06-02 22:00:00",
+      "bank_avg": 996.61,
+      "jewelry_avg": 1355.09,
+      "au9999": 981.5
+    },
+    {
+      "time": "2026-06-02 23:55:34",
+      "bank_avg": 996.61,
+      "jewelry_avg": 1355.09,
+      "au9999": 979.0
+    },
+    {
+      "time": "2026-06-03 08:20:05",
+      "bank_avg": 996.61,
+      "jewelry_avg": 1355.09,
+      "au9999": 978.0
+    },
+    {
+      "time": "2026-06-03 08:27:37",
+      "bank_avg": 996.61,
+      "jewelry_avg": 1355.09,
+      "au9999": 978.0
+    },
+    {
+      "time": "2026-06-03 08:31:22",
+      "bank_avg": 996.61,
+      "jewelry_avg": 1355.09,
+      "au9999": 978.0
+    }
+  ],
+  "last_price_snapshot": {
+    "au9999_above_982.5": 983.0,
+    "au9999_below_982": 978.0
+  }
+}
